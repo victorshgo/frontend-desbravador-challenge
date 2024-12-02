@@ -28,8 +28,10 @@ export function Search() {
   const handleSearch = () => navigate(`/${searchedUser}`);
 
   return (
-    <Layout>
-      <FaGithub className="h-16 w-auto" />
+    <Layout hideHeader>
+      <h1>
+        <FaGithub className="h-16 w-auto" />
+      </h1>
       <Card className="w-96 mt-8">
         <CardHeader>
           <CardTitle>Search user</CardTitle>
